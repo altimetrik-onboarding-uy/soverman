@@ -1,0 +1,23 @@
+Dear {!Compensation__c.Employee_Name__c}, 
+
+All of us at Altimemtrik are glad to have you working with us. 
+
+Your information: 
+Your Name: 
+
+{!Compensation__c.Employee_Name__c}, 
+
+Your job category: {!Compensation__c.Job_Category__c}, 
+
+Your location: {!Compensation__c.Location__c}, 
+Office: {!Compensation__c.Office__c}, 
+Your compensation's Status: {!Compensation__c.Status__c} 
+
+The general information: 
+
+Description :  {!Compensation__c.Description__c}
+Amount:  {!Compensation__c.Amount__c}
+Your Start date: {!Compensation__c.Start_Date__c}
+
+
+Best Regards

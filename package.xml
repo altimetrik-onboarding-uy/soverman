@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApprovalProcess</name>
+    </types>
+    <types>
+        <members>Compensations</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Compensation__c</members>
+        <members>Contact</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>unfiled$public/Compensation_Data</members>
+        <members>unfiled$public/Compensation_changed</members>
+        <members>unfiled$public/Compensation_status_changed_to_rejected</members>
+        <members>unfiled$public/Compensation_submitted_for_approval</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
+        <members>Compensation__c-Compensation %28Research%29</members>
+        <members>Compensation__c-Compensation %28Salary%29</members>
+        <members>Compensation__c-Compensation %28Study%29</members>
+        <members>Compensation__c-Compensation Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>compensations__c-compensations Layout</members>
+        <members>employeesCompensation__c-employeesCompensation Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>unfiled$public</members>
+        <members>unfiled$public/Compensations</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ReportType</name>
+    </types>
+    <types>
+        <members>Compensation__c</members>
+        <members>employeesCompensation__c</members>
+        <name>SharingRules</name>
+    </types>
+    <types>
+        <members>Compensation__c</members>
+        <name>Workflow</name>
+    </types>
+    <version>36.0</version>
+</Package>

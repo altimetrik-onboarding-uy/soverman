@@ -1,0 +1,46 @@
+<apex:page >
+<div id="output"></div>
+<apex:includeScript value="/soap/ajax/28.0/connection.js"/>
+<apex:includeScript value="/soap/ajax/28.0/apex.js"/>
+<script>
+    sforce.connection.sessionId = "{!$Api.Session_ID}";
+
+    function setupPage() {
+
+        var output = document.getElementById("output");
+            alert(output);
+        var startTime = new Date().getTime()
+
+         try {
+            var queryResult = sforce.connection.query("Select Id, Employee_Name__r.Name, Name,Amount__c From Compensation__c ");
+            layoutResults(queryResult, output, startTime);
+        } catch(error) {
+            queryFailed(error, output);
+        }
+    }
+
+    function queryFailed(error, out) {
+        out.innerHTML = "<font color=red>An error has occurred:</font> <p>" + error;
+    }
+
+    function layoutResults(queryResult, out, startTime) {
+        var timeTaken = new Date().getTime() - startTime;
+
+        if (queryResult.size > 0) {
+            var output = "";
+            var records = queryResult.getArray('compensation__c');
+
+            for (var i = 0; i < records.length; i++) {
+                var Compensation__c = Compensation__c[i];
+                output += Compensation__c.Id + " " + Compensation__c.Employee_Name__r.Name+" " +Compensation__c.Name+" " +Compensation__c.Amount__c+" "+ Compensation__c.Job_Category__c+" "+compensation__c.Location__c + " " +compensation__c.Office__c +""+compensation__c.Status__c  ;
+            }
+
+            out.innerHTML = output + "<BR> <BR> query complexted in: " + timeTaken + " ms.";
+        } else {
+            out.innerHTML = "No records matched.";
+        }
+    }
+    window.onload=setupPage();
+</script>
+
+</apex:page>
