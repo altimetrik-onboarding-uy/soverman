@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Contact</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Employees compensation report</description>
+    <join>
+        <outerJoin>true</outerJoin>
+        <relationship>Compensations__r</relationship>
+    </join>
+    <label>Compensation Reports</label>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Contact</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Contact.Compensations__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>RecordType</field>
+            <table>Contact.Compensations__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Office__c</field>
+            <table>Contact.Compensations__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Job_Category__c</field>
+            <table>Contact.Compensations__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Submitted__c</field>
+            <table>Contact.Compensations__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Status__c</field>
+            <table>Contact.Compensations__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Location__c</field>
+            <table>Contact.Compensations__r</table>
+        </columns>
+        <masterLabel>Compensations</masterLabel>
+    </sections>
+</ReportType>

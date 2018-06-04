@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Compensation_Status_Changed</fullName>
+        <description>Compensation Status Changed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Compensation_status_changed_to_approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Compensation_Status_Changed_Approved</fullName>
+        <description>Compensation Status Changed Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Employee_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Compensation_status_changed_to_approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Compensation_Status_Changed_rejected</fullName>
+        <description>Compensation Status Changed rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Employee_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Compensation_status_changed_to_rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Compensation_Status_Changed_to_Approved</fullName>
+        <description>Compensation Status Changed to Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Compensation_status_changed_to_approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Compensation_Status_Changed_to_Rejected</fullName>
+        <description>Compensation Status Changed to Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Compensation_status_changed_to_rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Compensation_Submitted_Notification</fullName>
+        <description>Compensation Submitted Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sovermanv.manager@altimetrik.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Compensation_submitted_for_approval</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Compensation</fullName>
+        <description>New Compensation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>compensationonboarding@altimetrik.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Compensation_submitted_for_approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Uruguay_compensation_created</fullName>
+        <description>Uruguay compensation created</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Employee_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Compensation_Data</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>APPROVED</literalValue>
+        <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected</fullName>
+        <field>Status__c</field>
+        <literalValue>REJECTED</literalValue>
+        <name>Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+</Workflow>
