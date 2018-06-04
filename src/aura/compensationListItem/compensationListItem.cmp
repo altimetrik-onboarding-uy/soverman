@@ -1,0 +1,23 @@
+<aura:component >
+    
+    <aura:attribute name="compensation" type="Compensation__c"></aura:attribute>
+    <tr class="slds-hint-parent">
+        
+        
+        <td><button class="slds-button" onclick="{!c.doEdit}">{!v.compensation.Employee_Name__r.Name}</button></td>
+        
+        <td><div class="slds-truncate" title="{!v.compensation.Employee_Name__r.Birthdate}">{!v.compensation.Employee_Name__r.Birthdate__c}</div></td>
+        
+        <td><div class="slds-truncate" title="{!v.compensation.Job_Category__c}">{!v.compensation.Job_Category__c}</div></td>
+        <td><div class="slds-truncate" title="{!v.compensation.RecordType.DeveloperName}">{!v.compensation.RecordType.DeveloperName}</div></td>
+        <td><div class="slds-truncate" title="{!v.compensation.Amount__c}">{!v.compensation.Amount__c}</div></td>
+        <td><div class="slds-truncate" title="{!v.compensation.Location__c}">{!v.compensation.Location__c}</div></td>
+        <td><div class="slds-truncate" title="{!v.compensation.Office__c}">{!v.compensation.Office__c}</div></td>
+        
+        <td><div class="slds-truncate" title="{!v.compensation.Submitted__c}">{!v.compensation.Submitted__c}</div></td>
+        <td><div class="slds-truncate" title="{!v.compensation.Status__c}">{!v.compensation.Status__c}</div></td>
+        
+    </tr>
+    
+    
+</aura:component>
