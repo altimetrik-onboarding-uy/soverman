@@ -1,0 +1,43 @@
+<aura:component controller="CompensationListController" implements="force:appHostable">
+    <aura:attribute name="compensations" type="Compensation__c[]" />
+    
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    
+    
+    <div class="slds-button-group" role="group">
+        <button class="slds-button slds-button_brand" label="all" onclick="{!c.doInit}">All</button> 
+        <button class="slds-button slds-button_brand" label="salary" onclick="{!c.salary}">Salary</button> 
+        
+        <button class="slds-button slds-button_brand" label="salary" onclick="{!c.study}">Study</button>     
+        <button class="slds-button slds-button_brand" label="salary" onclick="{!c.research}">Research</button> 
+    </div>
+    
+    <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal slds-table_striped">
+        <thead>
+            <tr class="slds-text-heading--label">
+                <th scope="col"><div class="slds-is-sortable" title="Employee Name">Employee Name</div></th>
+                <th scope="col"><div class="slds-is-sortable" title="Date of Birth">Date of Birth</div></th>
+                <th scope="col"><div class="slds-is-sortable" title="Job Category">Job Category</div></th>
+                <th scope="col"><div class="slds-is-sortable" title="Compensation Type">Compensation Type</div></th>
+                <th scope="col"><div class="slds-is-sortable" title="Amount">Amount</div></th>
+                <th scope="col"><div class="slds-is-sortable" title="Location">Location</div></th>
+                <th scope="col"><div class="slds-is-sortable" title="Office">Office</div></th>
+                <th scope="col"><div class="slds-truncate" title="Submitted">Submitted</div></th>
+                <th scope="col"><div class="slds-truncate" title="Status">Status</div></th>
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Use the Apex model and controller to fetch server side data -->
+            <aura:iteration items="{!v.compensations}" var="compensation">
+                
+                <c:compensationListItem compensation="{!compensation}"> </c:compensationListItem>
+                
+            </aura:iteration>
+        </tbody>
+        
+    </table>
+</aura:component>
