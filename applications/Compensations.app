@@ -5,4 +5,5 @@
     <tab>Home</tab>
     <tab>standard-Contact</tab>
     <tab>Compensation__c</tab>
+    <tab>Employees_Compensation</tab>
 </CustomApplication>

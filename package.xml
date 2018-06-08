@@ -2,6 +2,18 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>ApprovalProcess</name>
     </types>
     <types>
@@ -10,10 +22,11 @@
     </types>
     <types>
         <members>Compensation__c</members>
+        <members>Contact</members>
         <name>CustomObject</name>
     </types>
     <types>
-        <members>Compensation__c</members>
+        <members>*</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -36,6 +49,9 @@
         <members>Compensation__c-Compensation %28Salary%29</members>
         <members>Compensation__c-Compensation %28Study%29</members>
         <members>Compensation__c-Compensation Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>compensations__c-compensations Layout</members>
+        <members>employeesCompensation__c-employeesCompensation Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -46,6 +62,11 @@
     <types>
         <members>*</members>
         <name>ReportType</name>
+    </types>
+    <types>
+        <members>Compensation__c</members>
+        <members>employeesCompensation__c</members>
+        <name>SharingRules</name>
     </types>
     <types>
         <members>Compensation__c</members>
