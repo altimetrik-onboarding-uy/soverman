@@ -13,10 +13,6 @@
         <name>ApexTrigger</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApprovalProcess</name>
-    </types>
-    <types>
         <members>CompensationLW</members>
         <members>CompensationList</members>
         <members>CompensationSVG</members>
@@ -61,6 +57,11 @@
         <members>compensations__c-compensations Layout</members>
         <members>employeesCompensation__c-employeesCompensation Layout</members>
         <name>Layout</name>
+    </types>
+    <types>
+        <members>unfiled$public</members>
+        <members>unfiled$public/Compensations</members>
+        <name>Report</name>
     </types>
     <types>
         <members>*</members>

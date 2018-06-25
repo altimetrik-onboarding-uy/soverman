@@ -1,8 +1,12 @@
-<aura:component >
+<aura:component controller="CompensationListController" access="global">
+    <aura:attribute access="global" name="compensation" type="Compensation__c"></aura:attribute>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     
-    <aura:attribute name="compensation" type="Compensation__c"></aura:attribute>
     <tr class="slds-hint-parent">
         
+        
+        <td><div class="slds-truncate"><lightning:input type="checkbox" label="" 
+                                                        value="{!v.compensation}"  disabled="{!v.compensation.Submitted__c}" checked="{!v.compensation.Submitted__c}" onchange="{!c.checkboxChanged}"/></div></td>
         
         <td><button class="slds-button" onclick="{!c.doEdit}">{!v.compensation.Employee_Name__r.Name}</button></td>
         
